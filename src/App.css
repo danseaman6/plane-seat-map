@@ -1,33 +1,44 @@
+html, body {
+  --main-bg-color: #CDCDCD;
+  margin:0;
+  padding:0;
+  background-color: var(--main-bg-color);
+}
+
+#root {
+  background-color: var(--main-bg-color);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--main-bg-color);
+  margin-top: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Seating-Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cabin-Container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.Cabin {
+  margin-left: 20%;
+  width: 60%;
+}
+
+.Seat-Icon {
+  height: 35px;
+  width: 35px;
+  vertical-align: middle;
 }
